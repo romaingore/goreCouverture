@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
+
     <title>Vite App</title>
   </head>
   <body>
+  <header>
+
+
   <nav>
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xll flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="./public/images/logoGoreCouverture.png" class="h-16" alt="GoréCouverture Logo">
       </a>
@@ -61,29 +65,25 @@
     </div>
   </nav>
 
-  <!--HTML CODE-->
-  <div class="w-full relative">
-    <div class="swiper progress-slide-carousel swiper-container relative">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-            <span class="text-3xl font-semibold text-indigo-600">Slide 1 </span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-            <span class="text-3xl font-semibold text-indigo-600">Slide 2 </span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-            <span class="text-3xl font-semibold text-indigo-600">Slide 3 </span>
-          </div>
+    <!-- Vidéo de fond juste sous la navbar -->
+    <div class="relative w-full h-screen overflow-hidden">
+      <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
+        <source src="./public/images/videoHeader.mp4" type="video/mp4">
+        Ton navigateur ne supporte pas la vidéo.
+      </video>
+
+      <!-- Contenu par-dessus la vidéo -->
+      <div class="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-50">
+        <div class="text-center text-white">
+          <h1 class="text-5xl font-extrabold mb-4">Bienvenue chez Goré Couverture</h1>
+          <p class="text-lg">Votre expert couvreur, toujours à votre service.</p>
         </div>
       </div>
-      <div class="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
     </div>
-  </div>
+
+
+
+  </header>
 
 
   <script type="module" src="/main.js"></script>
