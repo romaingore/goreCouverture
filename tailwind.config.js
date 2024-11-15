@@ -14,6 +14,7 @@ module.exports = {
         grisClair: '#888888',
         beigeClair: '#f5f5f5',
         rougeClair: '#d65757',
+        noirDoux: '#2E2E2E',
       },
     },
   },
