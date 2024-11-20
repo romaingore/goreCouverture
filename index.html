@@ -9,76 +9,94 @@
   </head>
   <body>
   <header>
-  <nav>
-    <div class="max-w-screen-xll flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="./public/images/logoGoreCouverture.png" class="h-16" alt="GoréCouverture Logo">
-      </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <button type="button" class="button-devis text-white bg-gradient-to-r from-rougeClair to-rougeFonce hover:bg-gradient-to-br shadow-lg shadow-red-500/50 font-medium rounded-lg text-base px-5 py-2.5 text-center me-2 mb-2 transition-transform ease-in transform hover:scale-105">
-          <a href="tel:+33612345678" class="flex items-center">
+    <nav>
+      <div class="max-w-screen-xll flex flex-wrap items-center justify-between mx-auto p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./public/images/logoGoreCouverture.avif" class="h-16" alt="GoréCouverture Logo">
+        </a>
+        
+        <!-- Right Section: Button & Hamburger -->
+        <div class="flex custom-800:order-2 space-x-3 custom-800:space-x-0 rtl:space-x-reverse">
+          <!-- Button "Contact" -->
+          <button type="button" class="button-devis  text-white bg-gradient-to-r from-rougeClair to-rougeFonce hover:bg-gradient-to-br shadow-lg shadow-red-500/50 font-medium rounded-lg text-base px-5 py-2.5 text-center me-2 mb-2 transition-transform ease-in transform hover:scale-105">
+            <a href="tel:+33612345678" class="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
               06 66 61 72 42
-          </a>
-      </button>
-      
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
+            </a>
+          </button>
+    
+          <!-- Hamburger Menu -->
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg custom-800:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="items-center justify-between hidden w-full custom-800:flex custom-800:w-auto custom-800:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 custom-800:p-0 mt-4 font-medium border rounded-lg custom-800:space-x-8 rtl:space-x-reverse custom-800:flex-row custom-800:mt-0 custom-800:border-0">
+            <li>
+              <a href="#" class="block px-3 text-gray-900 text-lg rounded custom-800:bg-transparent custom-800:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 custom-800:p-0" aria-current="page">Accueil</a>
+            </li>
+            <li class="relative">
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 text-lg rounded custom-800:border-0 custom-800:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 custom-800:p-0 custom-800:w-auto">
+                Services
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="absolute z-10 hidden font-normal bg-beigeClair divide-y divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Dashboard</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Settings</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Earnings</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 custom-800:hover:bg-transparent custom-800:border-0 custom-800:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 custom-800:p-0">Réalisations</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 custom-800:hover:bg-transparent custom-800:border-0 custom-800:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 custom-800:p-0">Contact</a>
+            </li>
+            <li class="mt-4 md:mt-0 custom-410:hidden">
+              <a href="tel:+33612345678" class="block text-white bg-gradient-to-r from-rougeClair to-rougeFonce hover:bg-gradient-to-br shadow-lg shadow-red-500/50 font-medium rounded-lg text-center py-2 px-4">
+                <span class="flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  06 66 61 72 42
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('./public/images/DJI_0032.avif');">
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+      <div class="relative z-10 flex items-center justify-center flex-col h-full px-4">
+        <div class="mb-8 text-center">
+          <h1 class="text-white font-bold text-center lg:text-4xl md:text-3xl sm:text-2xl text-xl">
+            Votre toiture, notre savoir-faire
+          </h1>
+          <h3 class="text-white text-center lg:text-3xl md:text-2xl sm:text-lg text-base mx-4 mt-4">
+            Interventions rapides et efficaces pour tous vos travaux de couverture
+          </h3>
+        </div>
+        <button type="button"
+          class="text-white bg-gradient-to-r from-rougeClair to-rougeFonce hover:bg-gradient-to-br shadow-lg shadow-red-500/50 font-medium rounded-lg px-6 py-3 sm:px-8 sm:py-5 text-center transition-transform ease-in transform hover:scale-105 sm:px-8 sm:py-4 sm:text-lg">
+          Contactez-nous pour une expertise gratuite
         </button>
       </div>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4  font-medium border  rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-          <li>
-            <a href="#" class="block  px-3 text-gray-900 text-lg rounded md:bg-transparent md:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 md:p-0" aria-current="page">Accueil</a>
-          </li>
-          <li class="relative">
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 text-lg rounded  md:border-0 md:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 md:p-0 md:w-auto">
-              Services
-              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-              </svg>
-            </button>
-            <!-- Dropdown menu -->
-            <div id="dropdownNavbar" class="absolute z-10 hidden font-normal bg-beigeClair divide-y divide-gray-100 rounded-lg shadow w-44">
-              <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dashboard</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-200">Settings</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-200">Earnings</a>
-                </li>
-              </ul>
-            </div>
-          </li>          
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-900 text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 md:p-0">Réalisations</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 px-3 text-gray-900  text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-rougeFonce transition-transform ease-in transform hover:scale-105 md:p-0">Contact</a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
-  <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('./public/images/DJI_0032.jpeg');">
-    <div class="absolute inset-0 bg-black opacity-40"></div>
-    <div class="relative z-11 flex items-center justify-center flex-col h-full">
-      <div class="mb-8">
-        <h1 class="lg:text-4xl sm:text-2xl text-xl text-white text-center font-bold">Votre toiture, notre savoir-faire</h1>
-        <h3 class="lg:text-3xl sm:text-xl text-lg text-white text-center mx-6">Interventions rapides et efficaces pour tous vos travaux de couverture</h3>
-      </div>
-      <button type="button" class="text-white bg-gradient-to-r from-rougeClair to-rougeFonce hover:bg-gradient-to-br shadow-lg shadow-red-500/50 font-medium rounded-lg text-base px-5 py-2.5 text-center me-2  transition-transform ease-in transform hover:scale-105
-      md:text-lg md:px-8 md:py-4">Contactez-nous pour une expertise gratuite</button>
-    </div>
-  </div>
   </header>
   <!-- Section a propos  -->
   <section class="aPropos relative pt-16 pb-20 shapedividers_com-7555">
@@ -86,7 +104,7 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-start md:items-center justify-between space-y-8 md:space-y-0 md:space-x-12 mt-12">
       
       <div class="aboutleftpart w-full md:w-2/3">
-        <img src="./public/images/DJI_0003.jpeg" alt="image a propos" class="rounded-lg shadow-lg object-cover h-full w-full">
+        <img src="./public/images/DJI_0003.avif" alt="image a propos" class="rounded-lg shadow-lg object-cover h-full w-full">
       </div>
       
       <div class="aboutrightpart w-full md:w-1/2">
@@ -116,18 +134,18 @@
     <div class="cards grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 px-4">
 
       <!-- Card 1 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto  rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/IMG_0624.jpeg"
-            alt="Couverture en Ardoise"
+            src="./public/images/IMG_0624.avif"
+            alt="Couverture"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
-            Couverture en Ardoise
+            Couverture
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             La couverture protège votre maison des intempéries tout en améliorant son isolation thermique et acoustique. Avec notre expertise, bénéficiez d’un toit solide, durable et esthétique qui valorise votre habitation.
           </p>
@@ -146,18 +164,18 @@
       </div>
     
       <!-- Card 2 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto mt-12 sm:mt-0 rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/zinguerie.jpeg"
+            src="./public/images/zinguerie.avif"
             alt="Zinguerie"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
             Zinguerie
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             La zinguerie assure l’étanchéité de votre toiture et protège durablement votre maison des infiltrations. Confiez-nous vos travaux pour des finitions précises et une protection optimale, alliant efficacité et esthétisme
           </p>
@@ -176,18 +194,18 @@
       </div>
       
       <!-- Card 3 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto mt-12 sm:mt-0 rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/DJI_0038.jpeg"
+            src="./public/images/DJI_0038.avif"
             alt="Ramonage"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
             Ramonage
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             Un ramonage régulier est essentiel pour garantir la sécurité de votre foyer, améliorer le rendement de vos cheminées et éviter les risques d’incendie. Faites confiance à notre expertise pour un entretien impeccable
           </p>
@@ -206,18 +224,18 @@
       </div>
       
       <!-- Card 4 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto mt-12 sm:mt-0 rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/velux.jpeg"
+            src="./public/images/velux.avif"
             alt="Velux"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
             Pose de Velux
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             Apportez lumière et confort à votre intérieur avec nos services de pose et remplacement de Velux. Nous assurons une installation précise et durable pour une maison lumineuse et agréable à vivre
           </p>
@@ -236,18 +254,18 @@
       </div>
 
       <!-- Card 5 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto mt-12 sm:mt-0 rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/entretienToiture.jpeg"
+            src="./public/images/entretienToiture.avif"
             alt="Entretient toiture"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
             Entretient toiture
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             Assurez la longévité de votre toiture grâce à notre service d'entretien. Un toit bien entretenu protège efficacement votre maison et prévient les dégâts causés par le temps et les intempéries.
           </p>
@@ -266,18 +284,18 @@
       </div>
 
       <!-- Card 6 -->
-      <div class="max-w-4xl mx-auto rounded-lg">
+      <div class="max-w-4xl mx-auto mt-8 mb-6 sm:my-0  rounded-lg">
         <a href="#" class="relative">
           <img
             class="rounded-xl object-cover w-full h-[25rem] xl:h-[35rem]"
-            src="./public/images/bardage.jpeg"
+            src="./public/images/bardage.avif"
             alt="Bardage"
           />
           <h5 class="absolute bottom-[-3rem] left-1/2 w-3/4 -translate-x-1/2 bg-beigeClair rounded-lg text-rougeClair text-center text-2xl tracking-wider font-bold p-5">
             Bardage
           </h5>
         </a>
-        <div class="p-10">
+        <div class="p-10 flex flex-col justify-between h-[22rem]">
           <p class="my-8 font-normal text-center text-lg text-justify tracking-wide  text-beigeClair">
             Alliez esthétique et performance avec nos bardages en ardoise. Cette solution durable et élégante protège vos façades tout en apportant un cachet unique à votre maison.
           </p>
@@ -314,7 +332,7 @@
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="#" class="flex items-center">
-                <img src="./public/images/logoGoreCouverture.png" class="h-16 me-3" alt="GoreCouverture Logo" />
+                <img src="./public/images/logoGoreCouverture.avif" class="h-16 me-3" alt="GoreCouverture Logo" />
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

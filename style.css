@@ -57,7 +57,7 @@ background-position: 50% 100%;  background-image: url('data:image/svg+xml;charse
   }
 }
 
-@media only screen and (max-width: 402px) {
+@media only screen and (max-width: 410px) {
 
   .button-devis {
     display: none;

@@ -16,6 +16,10 @@ module.exports = {
         rougeClair: '#d65757',
         noirDoux: '#2E2E2E',
       },
+      screens: {
+        'custom-800': '800px', // Nouveau breakpoint à 800px
+        'custom-410': '411px'
+      },
     },
   },
   plugins: [
